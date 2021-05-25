@@ -13,7 +13,17 @@
 				margin: 0;
 				padding: 0;
 				color: #F0F8FF;
+				
 			}
+			a{
+				color: #000000;
+				text-decoration: none;
+			}
+			a:hover{
+				color: white;
+				transition: all 0.5s ease-in-out;
+			}
+			
 			.container {
 			 width: 100%;
 			}
@@ -36,6 +46,7 @@
 			.waikuang{
 				width: 100%;
 			}
+			
 			.form{
 				
 			}
@@ -48,7 +59,7 @@
 				 grid-auto-rows: minmax(85px, auto);
 				 grid-column-gap: 25px;
 			}
-			.container div>div>div>div>div>div{
+			.container div>div>div>form>div>div>div{
 				/* background-color: #00FFFF; */
 				/* border: 1px solid #5465ff; */
 				margin-top: 25px;
@@ -71,6 +82,38 @@
 				background: none;
 				letter-spacing: 2px;
 				box-sizing: border-box;
+			}
+			.dashuru{
+				width: 100%;
+				color: #fff;
+				font-size: 20px;
+				padding: 0.8em 1.2em 0.8em 0.4em;
+				height: 150px;
+				border: none;
+				border-bottom: 1px solid #fff;
+				background: none;
+				letter-spacing: 2px;
+				box-sizing: border-box;
+				overflow: hidden;
+				
+			}
+		
+			#wenjian{
+					font-size: 20px;
+			}
+			#tijiao{
+				width: 100%;
+				padding: 0.7em 0;
+				font-weight: 700;
+				font-size: 20px;
+				border: 0;
+				cursor: pointer;
+			}
+			#tijiao:hover{
+				
+				background-color: #000000;
+				color: white;
+				transition: all 0.5s ease-in-out;
 			}
 			.box4{
 				
@@ -108,98 +151,103 @@
 				<div class="w">
 				<div class="waikuang">
 					<div class="form">
-						<div class="grids">
-							<div class="grid">
-								<div class="box1">
-									<input type="text" name="Name" placeholder="Name" required="" class="shuru">
-								</div>
-								<div class="box2">
-									<input type="text" name="Email" placeholder="Email" required="" class="shuru">
-								</div>
-								<div class="box3">
-									<input type="text" name="Phone" placeholder="Phone" required="" class="shuru">
-								</div>
-							</div>
-							<div class="grid">
-								<div class="box4">
-									<input type="text" name="City" placeholder="City" required="" class="shuru">
-								</div>
-								<div class="box5">
-									<input type="text" name="Address" placeholder="Address" required="" class="shuru">
-								</div>
-								<div class="box6">
-									<input type="text" name="State" placeholder="State" required="" class="shuru">
-								</div>
-							</div>
-							<div class="grid">
-								<div class="box7">
-									<div class="">
-										<p>Gender</p>
-										<div class="xuanze">
-											<input type="radio" name="Gender" id="Male" value="Male" />
-											<label for="Male">Male</label>
-										</div>
-										<div class="xuanze">
-											<input type="radio" name="Gender" id="Female" value="Female" />
-											<label for="Female">Female</label>
-										</div>
+						<form action="#" method="post">
+							<div class="grids">
+								<div class="grid">
+									<div class="box1">
+										<input type="text" name="Name" placeholder="Name" required="" class="shuru">
 									</div>
-									
-								</div>
-								<div class="box8">
-									<div class="">
-										<p>Pet</p>
-										<div class="xuanze">
-											<input type="radio" name="Pet" id="Cat" value="Cat" />
-											<label for="Cat">Cat</label>
-										</div>
-										<div class="xuanze">
-											<input type="radio" name="Pet" id="Dog" value="Dog" />
-											<label for="Dog">Dog</label>
-										</div>
-										<div class="xuanze">
-											<input type="radio" name="Pet" id="Other" value="Other" />
-											<label for="Other">Other</label>
-										</div>
+									<div class="box2">
+										<input type="text" name="Email" placeholder="Email" required="" class="shuru">
+									</div>
+									<div class="box3">
+										<input type="text" name="Phone" placeholder="Phone" required="" class="shuru">
 									</div>
 								</div>
-								<div class="box9">
-									<div class="">
-										<p>Identification</p>
-										<div class="xuanze" >
-											<input type="checkbox" name="Identification" id="Tattooed" value="Male" />
-											<label for="Tattooed">Tattooed</label>
-										</div>
-										<div class="xuanze" >
-											<input type="checkbox" name="Identification" id="Microchipped" value="Female" />
-											<label for="Microchipped">Microchipped</label>
-										</div>
-										<div class="xuanze" >
-											<input type="checkbox" name="Identification" id="Dye" value="Dye" />
-											<label for="Dye">Dye</label>
+								<div class="grid">
+									<div class="box4">
+										<input type="text" name="City" placeholder="City" required="" class="shuru">
+									</div>
+									<div class="box5">
+										<input type="text" name="Address" placeholder="Address" required="" class="shuru">
+									</div>
+									<div class="box6">
+										<input type="text" name="State" placeholder="State" required="" class="shuru">
+									</div>
+								</div>
+								<div class="grid">
+									<div class="box7">
+										<div class="">
+											<p>Gender</p>
+											<div class="xuanze">
+												<input type="radio" name="Gender" id="Male" value="Male" />
+												<label for="Male">Male</label>
+											</div>
+											<div class="xuanze">
+												<input type="radio" name="Gender" id="Female" value="Female" />
+												<label for="Female">Female</label>
+											</div>
 										</div>
 										
 									</div>
+									<div class="box8">
+										<div class="">
+											<p>Pet</p>
+											<div class="xuanze">
+												<input type="radio" name="Pet" id="Cat" value="Cat" />
+												<label for="Cat">Cat</label>
+											</div>
+											<div class="xuanze">
+												<input type="radio" name="Pet" id="Dog" value="Dog" />
+												<label for="Dog">Dog</label>
+											</div>
+											<div class="xuanze">
+												<input type="radio" name="Pet" id="Other" value="Other" />
+												<label for="Other">Other</label>
+											</div>
+										</div>
+									</div>
+									<div class="box9">
+										<div class="">
+											<p>Identification</p>
+											<div class="xuanze" >
+												<input type="checkbox" name="Identification" id="Tattooed" value="Male" />
+												<label for="Tattooed">Tattooed</label>
+											</div>
+											<div class="xuanze" >
+												<input type="checkbox" name="Identification" id="Microchipped" value="Female" />
+												<label for="Microchipped">Microchipped</label>
+											</div>
+											<div class="xuanze" >
+												<input type="checkbox" name="Identification" id="Dye" value="Dye" />
+												<label for="Dye">Dye</label>
+											</div>
+											
+										</div>
+									</div>
 								</div>
+								<div class="grid">
+									<div class="box10"><input type="text" name="Age" placeholder="Age" required="" class="shuru"></div>
+									<div class="box11"><input type="text" name="Breed/type" placeholder="Breed/type" required="" class="shuru"></div>
+									<div class="box12"><input type="text" name="Pet Color &Markings" placeholder="Pet Color &Markings" required="" class="shuru"></div>
+								</div>
+								
+								
+								
 							</div>
-							<div class="grid">
-								<div class="box10"><input type="text" name="Age" placeholder="Age" required="" class="shuru"></div>
-								<div class="box11"><input type="text" name="Breed/type" placeholder="Breed/type" required="" class="shuru"></div>
-								<div class="box12"><input type="text" name="Pet Color &Markings" placeholder="Pet Color &Markings" required="" class="shuru"></div>
+							<div class="flex">
+								<div class="box13"><textarea placeholder="Any Message..." class="dashuru">
+									
+								</textarea></div>
+								<div class="box14"><input type="file" name="file" id="wenjian" value="选择文件"  /></div>
+								<div class="box15"><input type="submit" name="submit" id="tijiao" value="SUBMIT" /></div>
 							</div>
-							
-							
-							
-						</div>
-						<div class="flex">
-							<div class="box13"><input type="text" name="name" placeholder="Name" required="" class=""></div>
-							<div class="box14"><input type="file" name="file" id="" value="选择文件" /></div>
-							<div class="box15"><input type="submit" name="submit" id="" value="SUBMIT" /></div>
-						</div>
+						</form>
+					
 					</div>
 				</div>
 				</div>
-					<h2>©2021 Pet Found Form. All Rights Reserved | Do by Xiaohei</h2>
+					<h2>©2021 Pet Found Form. All Rights Reserved | Do by <a href="">Xiaohei</a></h2>
 				
 			
 		</div>
