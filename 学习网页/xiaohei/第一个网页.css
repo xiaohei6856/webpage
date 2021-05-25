@@ -1,0 +1,19 @@
+/* 后代选择器 
+body 下面的所有*/
+body p{
+	background-color: antiquewhite;
+}
+/* 子选择器 
+body 下面的第一代才有*/
+body>p{
+	background-color: aqua;
+}
+/* 相邻兄弟选择器 
+只有一个邻居，（向下）*/
+.h + h6{
+	background-color: blueviolet;
+}
+/* 通用选择器，当前元素的向下的所有兄弟元素 */
+.h ~h6{
+	background-color: #FAEBD7;
+}

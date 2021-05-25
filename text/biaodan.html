@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>biaodan</title>
+		<style type="text/css">
+			body{
+				background-image: url(beijingimg/b1.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				min-height: 100vh;
+				margin: 0;
+				padding: 0;
+				color: #F0F8FF;
+			}
+			.container {
+			 width: 100%;
+			}
+			h1{
+				font-size: 70px;
+				text-align: center;
+				
+			}
+			.w{
+				    width: 72%;
+					margin: 0 auto;
+					border: 6px double #000000;
+					box-shadow: -2px 7px 37px 8px rgb(0 0 0 / 57%);
+					padding: 30px;
+			}
+			.biaoti{
+				height: 116px;
+				background-color: #5465FF;
+			}
+			.waikuang{
+				width: 100%;
+			}
+			.form{
+				
+			}
+			.grids{
+				
+			}
+			.grid{
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+				 grid-auto-rows: minmax(85px, auto);
+				 grid-column-gap: 25px;
+			}
+			.container div>div>div>div>div>div{
+				/* background-color: #00FFFF; */
+				/* border: 1px solid #5465ff; */
+				margin-top: 25px;
+			}
+			.container .xuanze{
+				display: inline-block;
+				margin-top:5px ;
+			}
+			.flex{
+				display: flex;
+				flex-direction: column;
+			}
+			.shuru{
+				width: 100%;
+				color: #fff;
+				font-size: 20px;
+				padding: 1em 1.2em 1em 0.4em;
+				border: none;
+				border-bottom: 1px solid #fff;
+				background: none;
+				letter-spacing: 2px;
+				box-sizing: border-box;
+			}
+			.box4{
+				
+			}
+			.box7{
+				
+			}
+			.box10{
+				height: 85px;
+			}
+			.box13{
+				height: 180px;
+			}
+			.box14{
+				height: 60px;
+			}
+			.box15{
+				height: 80px;
+			}
+			.weibu{
+				height: 60px;
+				background-color: #7FFFD4;
+			}
+			h2{
+				text-align: center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+			
+					<h1>Pet Found Form</h1>
+				<div class="w">
+				<div class="waikuang">
+					<div class="form">
+						<div class="grids">
+							<div class="grid">
+								<div class="box1">
+									<input type="text" name="Name" placeholder="Name" required="" class="shuru">
+								</div>
+								<div class="box2">
+									<input type="text" name="Email" placeholder="Email" required="" class="shuru">
+								</div>
+								<div class="box3">
+									<input type="text" name="Phone" placeholder="Phone" required="" class="shuru">
+								</div>
+							</div>
+							<div class="grid">
+								<div class="box4">
+									<input type="text" name="City" placeholder="City" required="" class="shuru">
+								</div>
+								<div class="box5">
+									<input type="text" name="Address" placeholder="Address" required="" class="shuru">
+								</div>
+								<div class="box6">
+									<input type="text" name="State" placeholder="State" required="" class="shuru">
+								</div>
+							</div>
+							<div class="grid">
+								<div class="box7">
+									<div class="">
+										<p>Gender</p>
+										<div class="xuanze">
+											<input type="radio" name="Gender" id="Male" value="Male" />
+											<label for="Male">Male</label>
+										</div>
+										<div class="xuanze">
+											<input type="radio" name="Gender" id="Female" value="Female" />
+											<label for="Female">Female</label>
+										</div>
+									</div>
+									
+								</div>
+								<div class="box8">
+									<div class="">
+										<p>Pet</p>
+										<div class="xuanze">
+											<input type="radio" name="Pet" id="Cat" value="Cat" />
+											<label for="Cat">Cat</label>
+										</div>
+										<div class="xuanze">
+											<input type="radio" name="Pet" id="Dog" value="Dog" />
+											<label for="Dog">Dog</label>
+										</div>
+										<div class="xuanze">
+											<input type="radio" name="Pet" id="Other" value="Other" />
+											<label for="Other">Other</label>
+										</div>
+									</div>
+								</div>
+								<div class="box9">
+									<div class="">
+										<p>Identification</p>
+										<div class="xuanze" >
+											<input type="checkbox" name="Identification" id="Tattooed" value="Male" />
+											<label for="Tattooed">Tattooed</label>
+										</div>
+										<div class="xuanze" >
+											<input type="checkbox" name="Identification" id="Microchipped" value="Female" />
+											<label for="Microchipped">Microchipped</label>
+										</div>
+										<div class="xuanze" >
+											<input type="checkbox" name="Identification" id="Dye" value="Dye" />
+											<label for="Dye">Dye</label>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="box10"><input type="text" name="Age" placeholder="Age" required="" class="shuru"></div>
+								<div class="box11"><input type="text" name="Breed/type" placeholder="Breed/type" required="" class="shuru"></div>
+								<div class="box12"><input type="text" name="Pet Color &Markings" placeholder="Pet Color &Markings" required="" class="shuru"></div>
+							</div>
+							
+							
+							
+						</div>
+						<div class="flex">
+							<div class="box13"><input type="text" name="name" placeholder="Name" required="" class=""></div>
+							<div class="box14"><input type="file" name="file" id="" value="选择文件" /></div>
+							<div class="box15"><input type="submit" name="submit" id="" value="SUBMIT" /></div>
+						</div>
+					</div>
+				</div>
+				</div>
+					<h2>©2021 Pet Found Form. All Rights Reserved | Do by Xiaohei</h2>
+				
+			
+		</div>
+		
+	</body>
+</html>

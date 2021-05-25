@@ -1,0 +1,173 @@
+<!-- !DOCTYPE 告诉浏览器我们要使用什么规范 -->
+
+<!DOCTYPE html>
+
+<html>
+	<!-- head代表网页的头部 -->
+	<head>
+		<!--meta描述性标签,它用来描述我们网站的一些信息-->
+		<!-- meta一般用来做SEO -->
+		<meta charset="utf-8">
+		<!-- title代表网页的标题 -->
+		<title>xiaohei</title>
+		<link rel="stylesheet" type="text/css" href="第一个网页.css"/>
+	</head>
+	<!-- body代表网页的主体 -->
+	<body>
+		<a href="#end" id="top">end</a>
+		<!-- 标题标签 -->
+		<h1 class="h">标题1</h1>
+		<h6>标题6</h6>
+		<!-- 段落标签 -->
+		<p  >小黑真帅</p>
+		<!-- 换行标签 -->
+		那肯定<br/>
+		<p>我赞成</p>
+		<hr />
+		<!-- 粗体  斜体 -->
+		<strong>粗体</strong>
+		<em>斜体</em>
+		<!-- 特殊符号 -->
+		<p>空   格</p>
+		<p>空&nbsp;&nbsp;&nbsp;格</p>
+		&lt;
+		&gt;
+		&copy;
+		<br/>
+		<!-- 图片标签 -->
+		<img src="../img/img1.jpg" alt="路径错误" title="美吗？"width="180px"height="100px">
+		<br/>
+		<!-- a标签 -->
+		<a href="https://www.baidu.com/"target="_self">第一个网页</a>
+		
+		<p><a href="mailto:1278745282@qq.com">xiaohei</a></p>
+		<p><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">
+		<img border="0" src="http://wpa.qq.com/pa?p=2::52" alt="快加他" title="快加他"/></a></p>
+		<!-- 有序列表  -->
+		<ol>
+			<li>小黑</li>
+			<li>小白</li>
+		</ol>
+		<!-- 无序列表  -->
+		<ul>
+			<li>小黑</li>
+			<li>小白</li>
+		</ul>
+		<!-- 自定义列表  -->
+		<dl>
+			<dt>名字</dt>
+			<dd>小黑</dd>
+			<dd>小白</dd>
+			<dt>性别</dt>
+			<dd>公</dd>
+			<dd>母</dd>
+		</dl>
+		<!-- 表格标签table 
+		colspan 与td
+		rowspan 与tr
+		-->
+		<table border="1px" cellspacing="5" cellpadding="10">
+			<tr><th colspan="2"></th><th  colspan="2">公</th><th colspan="2">母</th></tr>
+			<tr ><td colspan="2" rowspan="2">仓<br/>鼠</td></tr>
+			<tr><td colspan="2">小黑</td><td>小白</td></tr>
+		</table>
+		<!-- 音频和视频 -->
+		<video src="../MP4/妲己.mp4" width="200" height="400" controls autoplay >
+			<source src="myvideo.mp4" type="video/mp4"></source>
+			<source src="myvideo.ogv" type="video/ogg"></source>
+			<source src="myvideo.webm" type="video/webm"></source>
+			<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+				<param name="movie" value="myvideo.swf" />
+				<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+			</object>
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+		<br />
+		<audio src="../MP3/桃花笑.mp3" controls >
+			当前浏览器不支持audio
+		</audio>
+		<hr />
+		<!-- 页面结构 -->
+		<header><h2>网页头部</h2></header>
+		<section><h2>网页主体</h2></section>
+		<footer><h2>网页脚部</h2></footer>
+		<hr />
+		<!-- iframe 内联框架 -->
+		<iframe src="../img/小黑.png" name="xiaohei" width="200" height="200"></iframe>
+		<a href="第一个网页.html" target="xiaohei">点击跳转</a>
+		<hr />
+		<!-- 表单form 
+		action :表单提交的位置，可以是网站,也可以是一个请求处理地址
+		method : post , get提交方式
+		  get方式提交:我们可以在url中看到我们提交的信息，不安全，高效﹒
+		  post : 比较交全,传输大文件﹒
+		-->
+		<form action="第一个网页.html" method="post">
+			<!-- 文本输入框 -->
+			<p><strong>名字:</strong><input type="text" name="username" id="" value="小黑" readonly=""/></p>
+			<p><strong>密码:</strong><input type="password" name="password" value="123456" hidden="" /></p>
+			<!-- 单选框标签 -->
+			<p>性别：
+				<input type="radio" name="sex" id="" value="boy" checked disabled=""/>男
+			    <input type="radio" name="sex" id="" value="girl" />女
+			</p>
+			<!-- 多选框 -->
+			<p>兴趣爱好：</p>
+				<input type="checkbox" name="hobby" id="" value="sleep" checked />睡觉
+				<input type="checkbox" name="hobby"  id="" value="eat" />吃
+			<!-- 文本域 -->
+			<p>反馈：
+				<textarea rows="10" cols="50" name="textarea">
+					文本内容
+				</textarea>
+			</p>
+			<!-- 文件域 -->
+			<p>
+				<input type="file" name="files" />
+				<input type="button" name="upload" id="" value="上传" />
+			</p>
+			<!-- 下拉框，列表框 -->
+			<p>国家：
+				<select name="列表名称">
+					<option value ="china">中国</option>
+					<option value ="us" selected="selected">美国</option>
+					<option value ="riben" >日本</option>
+				</select>
+			</p>
+			<!-- 邮件验证 -->
+			<p>邮箱：
+				<input type="email" name="email" id="" value="" required="必须填写" />
+			</p>
+			<!-- url验证 -->
+			<p>url：
+				<input type="url" name="url" id="" value="" placeholder="请输入url"/>
+			</p>
+			<!-- 数字验证 -->
+			<p>数量：
+				<input type="number" name="number" id="" value="10"  min="0" max="100" step="10" />
+			</p>
+			<!-- 滑块 -->
+			<p>音量：
+				<input type="range" name="voice" id="" value="" min="0" max="100" step="2" />
+			</p>
+			<!-- 搜索框 -->
+			<p>搜索：
+				<input type="search" name="search" id="" value="" />
+			</p>
+			<!-- 按钮 -->
+			<p>按钮：
+				<input type="button" name="普通按钮" id="" value="小黑" />
+				<input type="image" name="图片按钮" id="" value="小白" src="./logo.jpg" width="200" height="100" />
+			</p>
+			<!-- 增强鼠标的可用性 -->
+			<p>
+				<input type="text" name="text" id="haha" value="text"/><label for="haha">你点我试试</label>
+			</p>
+			<p><input type="submit" /></p>
+			<p><input type="reset" /></p>
+		</form>
+		
+		
+		<p><a href="#top" id="end">top</a></p>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="第一个网页.html" method="post">
+			<!-- 文本输入框 -->
+			<p><strong>名字:</strong><input type="text" name="username" id="" value="小黑" readonly=""/></p>
+			<p><strong>密码:</strong><input type="password" name="password" value="123456" hidden="" /></p>
+			<!-- 单选框标签 -->
+			<p>性别：
+				<input type="radio" name="sex" id="" value="boy" checked disabled=""/>男
+			    <input type="radio" name="sex" id="" value="girl" />女
+			</p>
+			<!-- 下拉框，列表框 -->
+			<p>国家：
+				<select name="列表名称">
+					<option value ="china">中国</option>
+					<option value ="us" selected="selected">美国</option>
+					<option value ="riben" >日本</option>
+				</select>
+			</p>
+			<!-- 邮件验证 -->
+			<p>邮箱：
+				<input type="email" name="email" id="" value="" required="必须填写" />
+			</p>
+			<!-- url验证 -->
+			<p>url：
+				<input type="url" name="url" id="" value="" placeholder="请输入url"/>
+			</p>
+			<!-- 数字验证 -->
+			<p>数量：
+				<input type="number" name="number" id="" value="10"  min="0" max="100" step="10" />
+			</p>
+			<!-- 滑块 -->
+			<p>音量：
+				<input type="range" name="voice" id="" value="" min="0" max="100" step="2" />
+			</p>
+			<!-- 搜索框 -->
+			<p>搜索：
+				<input type="search" name="search" id="" value="" />
+			</p>
+			<!-- 按钮 -->
+			<p>按钮：
+				<input type="button" name="普通按钮" id="" value="小黑" />
+				<input type="image" name="图片按钮" id="" value="小白" src="./logo.jpg" width="200" height="100" />
+			</p>
+			<!-- 增强鼠标的可用性 -->
+			<p>
+				<input type="text" name="text" id="haha" value="text"/><label for="haha">你点我试试</label>
+			</p>
+			<!-- 多选框 -->
+						<p>兴趣爱好：</p>
+							<input type="checkbox" name="hobby" id="" value="sleep" checked />睡觉
+							<input type="checkbox" name="hobby"  id="" value="eat" />吃
+						<!-- 文本域 -->
+						<p>反馈：
+							<textarea rows="10" cols="50" name="textarea">
+								文本内容
+							</textarea>
+						</p>
+						<!-- 文件域 -->
+						<p>
+							<input type="file" name="files" />
+							<input type="button" name="upload" id="" value="上传" />
+						</p>
+			<p><input type="submit" /></p>
+			<p><input type="reset" /></p>
+		</form>
+	</body>
+</html>

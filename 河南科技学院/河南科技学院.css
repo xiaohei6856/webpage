@@ -1,0 +1,711 @@
+body {
+	display:flex;/*Flex布局*/
+	flex-direction: column;
+	padding: 0rem ;
+	margin: 0rem auto;
+	max-width: 1519.2px;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+#daohang {
+	position: relative;
+	background-color: rgb(7, 65, 122);
+	font-size: 17px;
+}
+
+#daohang a {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+#headerfirst {
+	position: relative;
+	left: 388px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	width: 1000px;
+}
+
+[name="search"] {
+	font-size: 13px;
+	min-height: 0px;
+	margin: 0;
+	padding: 7px 8px;
+	outline: none;
+	color: #333;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 2px rgb(0 0 0 / 8%);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.15s ease-in;
+	-webkit-transition: all 0.15s ease-in;
+	vertical-align: middle;
+}
+
+#sousuo {
+	background-color: rgb(7, 65, 122);
+	color: aliceblue;
+
+}
+
+.sou {
+	display: inline;
+
+}
+
+.sou input {
+	border: none;
+	border-radius: 4px;
+
+}
+
+#headersecond {
+	width: 100%;
+	height: 175px;
+	background-color: rgb(10, 83, 155);
+	position: relative;
+
+}
+
+#headersecond img {
+
+	margin-top: 35px;
+	border: 0px;
+}
+
+#headerthird {
+	width: 100%;
+	height: 50px;
+	line-height: 32px;
+	position: relative;
+	z-index: 100;
+	animation: myfirst 5s;
+	-webkit-animation: myfirst 5s;
+
+}
+
+#headerthird ul {
+
+
+	list-style-type: none;
+}
+
+#headerthird ul li {
+	position: relative;
+	float: left;
+}
+
+#hide1:hover .headerhide1,
+.headerhide1 ul {
+	height: 248px;
+
+}
+
+#hide2:hover .headerhide2,
+.headerhide2 ul {
+	height: 148.8px;
+}
+
+#hide3:hover .headerhide3,
+.headerhide3 ul {
+	height: 175px;
+}
+
+div[class^="headerhide"] li:hover {
+	background-color: #00ffff;
+}
+
+/* @keyframes hide1
+{
+	0%{
+		height: 0px;
+	}
+	100%{
+		height: 248px;
+	}
+	
+} */
+div[class^="headerhide"] ul {
+
+	transition: height 1s;
+}
+
+div[class^="headerhide"] li {
+	width: 100%;
+
+
+}
+
+div[class^="headerhide"] {
+	background-color: #7db9ed;
+	width: 100px;
+	position: absolute;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	height: 0px;
+	overflow: hidden;
+	transition: height 1s;
+}
+
+#headerthird span {
+	display: inline;
+	float: left;
+	width: 132px;
+	position: relative;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#headerforth {
+	width: 100%;
+	height: 419.11px;
+	margin: 0px;
+	overflow: hidden;
+	left: 0px;
+	position: relative;
+
+}
+
+#headerforth img {
+
+	min-width: 1519.2px;
+	height: 419px;
+}
+
+#headerforth ul {
+	width: 4413.6px;
+	float: left;
+}
+
+/* @keyframes lunbo1{
+	0%{
+		display: list-item;
+	}
+	40%{
+		display: list-item;
+	}
+	60%{
+		display: none;
+	}
+	100%{
+		display: none;
+	}
+} */
+#lun1 {
+	animation: lunbo2 5s infinite;
+}
+
+@keyframes lunbo2 {
+
+	/* from{
+		display: none;
+	}
+	to{
+		display: list-item;
+	} */
+	0%,
+	40% {
+		z-index: 99;
+	}
+
+	60%,
+	100% {
+		z-index: 1;
+	}
+}
+
+
+section {
+}
+
+.body {
+	width: 100%;
+
+	background: linear-gradient(rgb(146, 193, 219), rgb(227, 244, 255), rgb(146, 193, 219));
+
+}
+
+section ul {
+	list-style-image: url(imgs/biaoqian.png);
+	list-style-position: inherit;
+
+}
+
+.sectionbody {
+	position: relative;
+	max-width: 1000px;
+	margin: auto;
+	padding: 30px;
+	height: 2400px;
+}
+
+section span,
+p {
+	color: black;
+}
+
+.sectionbodyfirst {
+	margin-bottom: 17px;
+}
+
+.secright {
+	width: 80px;
+	height: 27px;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #156bc0;
+	position: absolute;
+	right: 70px;
+	top: 55px;
+}
+
+.secright a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.first1 {
+	position: relative;
+}
+
+.first2 {
+	position: relative;
+	width: 1000px;
+	height: 325px;
+
+}
+
+.first3 {
+	background-color: #F0F8FF;
+	width: 232px;
+	height: 300px;
+	position: relative;
+
+}
+
+.first2_1 {
+	background-color: #F0F8FF;
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	text-align: 10px;
+	line-height: 24px;
+	font-size: 10px;
+}
+
+.first2_1 ul {
+	display: inline;
+	list-style-type: none;
+	position: absolute;
+	left: -11px;
+	top: 14px;
+	list-style-image: url(imgs/tubiao2.png);
+}
+
+.first2_1 span {
+	font-size: 10px;
+	text-align: left;
+
+}
+
+.first3_1 {
+	background-color: #F0F8FF;
+	width: 212px;
+	height: 150px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.first3_1 h6 {
+	position: absolute;
+	height: 20px;
+	left: 5px;
+	top: 160px;
+	font-size: 0.1px;
+	font-weight: 100;
+}
+
+.first3_2 {
+	width: 212px;
+	height: 153px;
+	position: absolute;
+	bottom: -64px;
+	left: 12px;
+	font-size: 5px;
+	font-weight: 200;
+}
+
+.second {
+	position: relative;
+	width: 500px;
+
+}
+
+.second1 {
+	position: relative;
+	top: 10px;
+	left: -10px;
+	width: 450px;
+	height: 400px;
+
+}
+
+.second1_1 {
+	position: relative;
+	width: 500px;
+	height: 100px;
+	background-color: white;
+	right: 20px;
+}
+
+.second1_2 {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	background-color: #156BC0;
+
+}
+
+.second1_2 span {
+	position: absolute;
+	top: 18px;
+	text-align: center;
+	color: white;
+}
+
+.second1_3 {
+	position: absolute;
+	width: 350px;
+	right: 20px;
+	height: 20px;
+	top: 15px;
+
+}
+
+.second1_3 a {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	color: rgb(14, 91, 167);
+}
+
+.second1_3 p>a {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	color: gray;
+}
+
+.second2_1 {
+	position: absolute;
+	top: 450px;
+	left: 600px;
+	width: 450px;
+	height: 444px;
+}
+
+.second3_1 {
+	background-color: #F0F8FF;
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	text-align: 10px;
+	line-height: 22px;
+	font-size: 10px;
+}
+
+.second3_1 ul {
+
+	list-style-type: none;
+	position: relative;
+	left: -11px;
+	top: 14px;
+	list-style-image: url(imgs/tubiao2.png);
+}
+
+.seth {
+	position: relative;
+	width: 1000px;
+	height: 150px;
+}
+
+.third {
+	position: relative;
+	width: 1000px;
+	height: 350px;
+}
+
+.third1 {
+	position: relative;
+	top: 10px;
+	left: -10px;
+	width: 488px;
+	height: 350px;
+
+}
+
+.third1_3 {
+	position: relative;
+}
+
+#lun2 {
+	animation: lunbo1 5s infinite;
+}
+
+@keyframes lunbo1 {
+
+	/* from{
+		display: none;
+	}
+	to{
+		display: list-item;
+	} */
+	0%,
+	40% {
+		z-index: 10;
+	}
+
+	60%,
+	100% {
+		z-index: 1;
+	}
+}
+
+.third2 {
+	position: absolute;
+	top: 10px;
+	right: -20px;
+	width: 488px;
+	height: 350px;
+}
+
+.third2_1 {
+	background-color: white;
+	position: absolute;
+	top: 75px;
+	height: 260px;
+
+
+}
+
+.third2_2 span {
+	text-align: center;
+	margin: 11px;
+
+	line-height: 5em;
+	border-bottom: 2px dotted gray;
+	justify-content: space-around;
+}
+
+.forth2_1 {
+	position: relative;
+	top: 0px;
+	right: 10px;
+	width: 450px;
+	height: 400px;
+}
+
+.forth3_1 {
+	background-color: #F0F8FF;
+	width: 490px;
+	height: 350px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	text-align: 10px;
+	line-height: 22px;
+	font-size: 10px;
+	left: 0px;
+}
+
+.forth3_1 ul {
+	display: inline;
+	list-style-type: none;
+	position: absolute;
+	left: -11px;
+	top: 14px;
+	list-style-image: url(imgs/tubiao2.png);
+}
+
+.fifth2_1 {
+	position: relative;
+	top: -395px;
+	left: 535px;
+	width: 530px;
+	height: 400px;
+}
+
+.fifth3_1 {
+	background-color: #F0F8FF;
+	width: 480px;
+	height: 350px;
+	position: absolute;
+	top: 45px;
+	right: 50px;
+	text-align: 10px;
+	line-height: 22px;
+	font-size: 10px;
+	left: 0px;
+}
+
+.fifth3_1 ul {
+	display: inline;
+	list-style-type: none;
+	position: absolute;
+	left: -11px;
+	top: 14px;
+	list-style-image: url(imgs/tubiao2.png);
+}
+
+.sixth1 {
+	position: relative;
+	width: 1000px;
+	height: 300px;
+	top: -370px;
+}
+
+.sixth1_1 {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	top: 50px;
+	background-color: white;
+	text-align: center;
+}
+
+.sixth2 {
+	background-color: #3697f7;
+	width: 100px;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	left: 110px;
+	top: 20px;
+}
+
+.sixth2 a {
+	color: white;
+}
+
+.sixth2_1 {
+	position: relative;
+	top: 40px;
+	font-size: 13.1px;
+}
+
+.sixth2_1 a {
+	color: cornflowerblue;
+}
+
+.sixth2_1 ul {
+	display: inline;
+	list-style-type: none;
+	position: absolute;
+	width: 250px;
+	left: -11px;
+	top: -10px;
+	list-style-image: url(imgs/tubiao2.png);
+}
+
+.seventh1 {
+	position: relative;
+	width: 1000px;
+	height: 250px;
+	top: -390px;
+}
+
+.seventh2_1 {
+	position: relative;
+	width: 1000px;
+	top: 40px;
+}
+
+.seventh2_2 {
+	position: absolute;
+	width: 280px;
+	height: 210px;
+	text-align: center;
+	background-color: white;
+}
+
+.seventh2_2 img {
+	position: relative;
+	top: 10px;
+}
+
+.seventh2_2 a {
+	color: black;
+}
+
+footer {
+	width: 100%;
+	background-color: #156BC0;
+	position: relative;
+	height: 200px;
+}
+
+#footer1 {}
+
+#footer1_1 {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+#footer1_2 {
+	position: absolute;
+	top: 55px;
+	left: 400px;
+	border-left: 2px solid white;
+	padding-left: 3px;
+	width: 12.5rem;
+	height: 62px;
+	font-size: 5px;
+}
+
+#footer1_3 {
+	position: absolute;
+	top: 90px;
+	left: 680px;
+	width: 300px;
+	height: auto;
+	font-size: 5px;
+}
+
+#footer1_4 {
+	position: absolute;
+	top: 80px;
+	left: 1005px;
+	letter-spacing: 10px;
+}
+
+#footer1_5 {
+	position: absolute;
+	top: 20px;
+	left: 705px;
+}
+
+#footer1_6 {
+	position: absolute;
+	top: 50px;
+	left: 600px;
+}
