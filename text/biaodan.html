@@ -42,7 +42,7 @@
 					border: 6px double #000000;
 					box-shadow: -2px 7px 37px 8px rgb(0 0 0 / 67%);
 					padding: 30px;
-					background-color: rgba(0, 0, 0, 0.4);
+					background-color: rgba(0, 0, 0, 0.5);
 			}
 			.biaoti{
 				height: 116px;
@@ -146,43 +146,49 @@
 				text-align: center;
 			}
 			@media (max-width:1440px) {
+				body{
+					background-position: -350px 0px;
+				}
 					.container{
 						width: 100%;
 					}
 				}
 				@media (max-width:1280px) {
+					body{
+						background-position: -1150px 0px;
+					}
 					.container{
 						width: 98%;
 					}
 					.grid{
 						grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-						 grid-column-gap: 25px;
-						 grid-row-gap: 50px;
-						 margin-bottom: 50px;
+						 grid-auto-rows: minmax(40px, auto);
 					}
 				}
 				@media (max-width:1080px) {
+					body{
+						background-position: -1250px 0px;
+					}
 					.container{
 						width: 90%;
 						margin: 0 auto;
 					}
 					.grid{
 						grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-						 grid-column-gap: 25px;
-						  grid-row-gap: 55px;
-						   margin-bottom: 50px;
+						grid-auto-rows: minmax(40px, auto);
 					}
 				}
 				@media (max-width:1050px) {
+					body{
+						background-position: -1200px 0px;
+					}
 					.container{
 						width: 80%;
 						margin: 0 auto;
 					}
 					.grid{
 						grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-						 grid-column-gap: 25px;
-						  grid-row-gap: 60px;
-						   margin-bottom: 50px;
+						grid-auto-rows: minmax(40px, auto);
 					}
 				}
 			/* 	@media (max-width:950px) {
@@ -317,7 +323,7 @@
 					</div>
 				</div>
 				</div>
-					<h2>©2021 Pet Found Form. All Rights Reserved | Do by <a href="">Xiaohei</a></h2>
+					<h2>©2021 Pet Found Form. All Rights Reserved | Do by <a href="https://www.jianshu.com/u/f218c3bb8db0">Xiaohei</a></h2>
 				
 			
 		</div>
